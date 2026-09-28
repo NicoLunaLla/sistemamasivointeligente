@@ -9,6 +9,7 @@ El proyecto utiliza el algoritmo de Búsqueda de Costo Uniforme (Uniform Cost Se
 Actualmente, el sistema interactúa de manera robusta y validada a través de la interfaz de consola:
 
 ==================================================
+
   SISTEMA INTELIGENTE DE RUTAS - TRANSPORTE MASIVO
   (Sistema Basado en Conocimiento)
 ==================================================
