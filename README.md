@@ -8,11 +8,10 @@ El proyecto utiliza el algoritmo de Búsqueda de Costo Uniforme (Uniform Cost Se
 
 Actualmente, el sistema interactúa de manera robusta y validada a través de la interfaz de consola:
 
-==================================================
-
+--------------------------------------------------
   SISTEMA INTELIGENTE DE RUTAS - TRANSPORTE MASIVO
   (Sistema Basado en Conocimiento)
-==================================================
+--------------------------------------------------
 
 Estaciones disponibles:
    1. Portal Norte
@@ -23,15 +22,15 @@ Estaciones disponibles:
 Estacion de ORIGEN: Portal Norte
 Estacion de DESTINO: Portal Sur
 
-==================================================
+--------------------------------------------------
   RUTA DE: Portal Norte  ->  Portal Sur
-==================================================
+--------------------------------------------------
   Secuencia de estaciones:
     Portal Norte  ->  Suba  ->  Portal Sur
 
   Costo total: 27
   Estaciones recorridas: 3
-==================================================
+--------------------------------------------------
 
 
 🛠️ Arquitectura y Componentes
