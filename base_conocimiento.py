@@ -192,4 +192,3 @@ def listar_estaciones():
     Util para mostrarsela al usuario en la consola.
     """
     return list(ESTACIONES)
-
