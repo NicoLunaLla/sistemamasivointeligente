@@ -1,0 +1,161 @@
+origen,destino,hora,dia_semana,pasajeros,lluvia,hora_pico,tiempo_estimado,nivel_congestion,dia_laboral,cluster
+Av. Boyaca,Toberin,5,Sabado,45,0,0,4,Baja,0,2
+Toberin,Tercer Milenio,22,Lunes,128,0,0,7,Media,1,0
+Calle 100,Suba,5,Viernes,70,1,0,7,Media,1,2
+Heroes,Portal Sur,5,Domingo,30,1,0,6,Baja,0,2
+Calle 100,Portal Sur,15,Lunes,43,1,0,6,Baja,1,2
+Calle 72,Av. Boyaca,13,Domingo,15,1,0,7,Baja,0,2
+Bosa,Calle 45,7,Viernes,95,0,1,10,Media,1,1
+Toberin,Portal Norte,12,Domingo,47,0,0,4,Baja,0,2
+Calle 45,Heroes,19,Sabado,56,0,1,7,Media,0,1
+Av. Boyaca,Heroes,7,Viernes,63,0,1,7,Media,1,1
+Heroes,Tercer Milenio,22,Martes,103,0,0,6,Media,1,0
+Ricaurte,Calle 72,17,Miercoles,36,0,1,7,Media,1,1
+Calle 72,Calle 100,20,Jueves,137,0,0,8,Media,1,0
+Tercer Milenio,Av. Jimenez,22,Miercoles,129,1,0,10,Alta,1,0
+Calle 142,Suba,20,Lunes,32,0,0,3,Baja,1,2
+Ricaurte,Av. Boyaca,18,Viernes,36,1,1,8,Media,1,1
+Calle 26,Suba,13,Viernes,22,0,0,5,Baja,1,2
+Ricaurte,Heroes,15,Lunes,95,1,0,8,Media,1,0
+Tercer Milenio,Ricaurte,13,Viernes,65,0,0,7,Baja,1,2
+Av. Boyaca,Av. Jimenez,11,Martes,115,0,0,9,Media,1,0
+Bosa,Av. Jimenez,5,Viernes,102,1,0,8,Media,1,0
+Calle 72,Bosa,14,Martes,34,0,0,5,Baja,1,2
+Toberin,Ricaurte,20,Domingo,18,0,0,3,Baja,0,2
+Av. Jimenez,Calle 142,13,Viernes,128,0,0,9,Alta,1,0
+Tercer Milenio,Calle 100,14,Jueves,115,1,0,11,Media,1,0
+Calle 100,Heroes,7,Miercoles,25,0,1,7,Baja,1,1
+Toberin,Ricaurte,6,Martes,37,0,1,6,Baja,1,1
+Calle 100,Calle 72,20,Martes,158,0,0,10,Alta,1,0
+Suba,Av. Boyaca,20,Martes,141,1,0,10,Alta,1,0
+Av. Boyaca,Calle 45,16,Jueves,125,1,0,11,Media,1,0
+Av. Boyaca,Tercer Milenio,8,Lunes,123,0,1,9,Alta,1,1
+Calle 100,Suba,19,Martes,128,0,1,10,Alta,1,1
+Portal Sur,Toberin,19,Domingo,80,0,1,7,Media,0,1
+Av. Jimenez,Bosa,5,Lunes,80,0,0,6,Baja,1,2
+Calle 100,Bosa,17,Lunes,62,1,1,8,Alta,1,1
+Heroes,Portal Sur,19,Miercoles,128,1,1,11,Alta,1,0
+Calle 100,Portal Norte,22,Lunes,100,0,0,6,Media,1,0
+Av. Jimenez,Bosa,21,Martes,34,0,0,3,Baja,1,2
+Toberin,Tercer Milenio,12,Jueves,50,0,0,6,Baja,1,2
+Suba,Toberin,18,Sabado,84,0,1,8,Media,0,1
+Tercer Milenio,Calle 72,12,Miercoles,121,0,0,9,Media,1,0
+Calle 26,Calle 72,7,Lunes,137,0,1,9,Alta,1,1
+Av. Jimenez,Heroes,9,Miercoles,37,0,0,4,Baja,1,2
+Calle 26,Bosa,22,Sabado,48,0,0,6,Baja,0,2
+Heroes,Tercer Milenio,8,Martes,87,0,1,7,Alta,1,1
+Calle 142,Calle 72,14,Viernes,73,0,0,5,Baja,1,2
+Portal Sur,Heroes,21,Jueves,84,0,0,5,Media,1,2
+Portal Sur,Heroes,6,Lunes,105,0,1,10,Alta,1,1
+Calle 142,Ricaurte,19,Viernes,129,0,1,9,Alta,1,1
+Bosa,Tercer Milenio,9,Viernes,29,0,0,5,Baja,1,2
+Calle 45,Calle 142,6,Miercoles,113,0,1,10,Alta,1,1
+Calle 100,Tercer Milenio,8,Miercoles,124,0,1,9,Alta,1,1
+Ricaurte,Portal Sur,10,Jueves,26,0,0,5,Baja,1,2
+Ricaurte,Calle 45,12,Miercoles,60,0,0,5,Baja,1,2
+Portal Sur,Calle 26,12,Martes,137,0,0,8,Alta,1,0
+Portal Sur,Calle 100,12,Lunes,69,1,0,8,Baja,1,0
+Toberin,Portal Sur,13,Miercoles,150,1,0,12,Alta,1,0
+Av. Jimenez,Calle 72,5,Lunes,86,0,0,7,Media,1,2
+Heroes,Portal Norte,8,Viernes,131,0,1,11,Alta,1,1
+Calle 45,Av. Boyaca,21,Lunes,118,0,0,8,Media,1,0
+Calle 45,Portal Norte,21,Domingo,78,0,0,6,Baja,0,2
+Av. Boyaca,Calle 72,15,Sabado,25,0,0,5,Baja,0,2
+Calle 45,Calle 72,17,Sabado,47,0,1,6,Media,0,1
+Calle 45,Tercer Milenio,10,Viernes,97,1,0,10,Media,1,0
+Heroes,Calle 72,11,Jueves,102,1,0,9,Media,1,0
+Calle 100,Suba,20,Domingo,31,0,0,4,Baja,0,2
+Av. Boyaca,Suba,15,Lunes,80,0,0,5,Media,1,2
+Calle 142,Portal Norte,6,Martes,141,0,1,11,Alta,1,1
+Av. Boyaca,Suba,11,Sabado,59,1,0,7,Baja,0,2
+Av. Boyaca,Ricaurte,5,Domingo,23,1,0,5,Baja,0,2
+Tercer Milenio,Av. Jimenez,19,Lunes,83,0,1,8,Media,1,1
+Calle 26,Tercer Milenio,21,Viernes,101,1,0,10,Alta,1,0
+Bosa,Av. Jimenez,18,Domingo,80,1,1,9,Alta,0,1
+Calle 26,Av. Jimenez,13,Domingo,41,0,0,6,Baja,0,2
+Calle 100,Calle 72,19,Lunes,93,0,1,9,Media,1,1
+Bosa,Av. Jimenez,7,Martes,58,0,1,7,Media,1,1
+Tercer Milenio,Calle 100,7,Jueves,124,0,1,11,Alta,1,1
+Portal Norte,Heroes,18,Jueves,25,1,1,8,Baja,1,1
+Calle 72,Heroes,17,Domingo,63,0,1,8,Media,0,1
+Calle 45,Av. Jimenez,5,Jueves,106,1,0,10,Media,1,0
+Calle 26,Calle 142,22,Lunes,120,0,0,7,Media,1,0
+Calle 142,Bosa,19,Martes,32,0,1,6,Baja,1,1
+Calle 26,Calle 72,15,Domingo,58,0,0,5,Baja,0,2
+Toberin,Av. Jimenez,5,Sabado,79,0,0,6,Baja,0,2
+Toberin,Portal Sur,6,Domingo,13,0,1,5,Baja,0,2
+Suba,Calle 142,12,Martes,141,0,0,10,Alta,1,0
+Calle 26,Ricaurte,13,Domingo,57,0,0,6,Baja,0,2
+Tercer Milenio,Ricaurte,8,Domingo,30,0,1,5,Baja,0,2
+Bosa,Heroes,17,Jueves,70,0,1,9,Media,1,1
+Av. Boyaca,Calle 100,8,Sabado,48,0,1,8,Media,0,1
+Calle 72,Suba,18,Sabado,57,0,1,8,Media,0,1
+Portal Norte,Bosa,18,Domingo,72,0,1,8,Media,0,1
+Av. Boyaca,Bosa,19,Sabado,29,1,1,7,Media,0,1
+Av. Boyaca,Heroes,22,Domingo,71,1,0,8,Media,0,0
+Suba,Heroes,15,Domingo,41,0,0,5,Baja,0,2
+Calle 100,Portal Sur,19,Viernes,117,0,1,9,Alta,1,1
+Calle 72,Calle 142,20,Martes,110,0,0,7,Media,1,0
+Suba,Ricaurte,13,Viernes,22,0,0,3,Baja,1,2
+Calle 45,Av. Jimenez,22,Domingo,40,1,0,8,Baja,0,2
+Calle 26,Portal Sur,5,Lunes,95,0,0,7,Media,1,2
+Heroes,Tercer Milenio,16,Jueves,155,0,0,9,Alta,1,0
+Av. Jimenez,Calle 72,16,Sabado,68,0,0,6,Baja,0,2
+Toberin,Ricaurte,11,Miercoles,50,0,0,4,Baja,1,2
+Calle 26,Heroes,21,Viernes,92,0,0,6,Media,1,0
+Calle 72,Calle 142,14,Lunes,156,0,0,9,Alta,1,0
+Portal Norte,Suba,14,Sabado,26,1,0,5,Baja,0,2
+Suba,Heroes,20,Jueves,132,0,0,7,Alta,1,0
+Heroes,Bosa,20,Lunes,36,1,0,6,Baja,1,2
+Av. Boyaca,Tercer Milenio,6,Martes,58,0,1,6,Media,1,1
+Toberin,Suba,18,Viernes,77,1,1,10,Alta,1,1
+Heroes,Bosa,18,Miercoles,35,0,1,5,Baja,1,1
+Heroes,Tercer Milenio,7,Martes,81,0,1,9,Media,1,1
+Portal Norte,Calle 26,19,Sabado,86,1,1,10,Media,0,1
+Heroes,Ricaurte,14,Sabado,68,0,0,7,Baja,0,2
+Heroes,Portal Sur,11,Jueves,49,0,0,6,Baja,1,2
+Heroes,Bosa,9,Lunes,35,0,0,4,Baja,1,2
+Portal Sur,Suba,14,Jueves,51,1,0,8,Baja,1,0
+Calle 45,Heroes,21,Viernes,146,1,0,10,Alta,1,0
+Bosa,Calle 45,15,Viernes,84,0,0,5,Baja,1,2
+Av. Boyaca,Bosa,5,Domingo,44,0,0,4,Baja,0,2
+Av. Boyaca,Calle 26,13,Martes,131,1,0,9,Alta,1,0
+Calle 45,Calle 72,15,Sabado,23,0,0,4,Baja,0,2
+Calle 26,Heroes,17,Domingo,80,0,1,8,Media,0,1
+Heroes,Calle 45,8,Domingo,61,0,1,8,Media,0,1
+Calle 26,Calle 45,6,Martes,152,0,1,12,Alta,1,1
+Av. Boyaca,Calle 26,6,Martes,88,0,1,9,Media,1,1
+Tercer Milenio,Calle 26,8,Lunes,81,0,1,8,Media,1,1
+Av. Jimenez,Calle 45,7,Martes,49,1,1,8,Media,1,1
+Calle 142,Av. Jimenez,14,Viernes,89,1,0,9,Media,1,0
+Calle 100,Av. Jimenez,22,Martes,118,0,0,9,Media,1,0
+Bosa,Calle 142,7,Miercoles,126,0,1,11,Alta,1,1
+Portal Norte,Calle 72,14,Domingo,85,1,0,7,Media,0,2
+Calle 26,Calle 72,15,Viernes,159,1,0,11,Alta,1,0
+Portal Sur,Calle 100,12,Viernes,118,0,0,8,Media,1,0
+Tercer Milenio,Calle 26,17,Jueves,58,1,1,8,Media,1,1
+Suba,Calle 72,8,Domingo,66,0,1,9,Media,0,1
+Portal Norte,Ricaurte,9,Jueves,59,0,0,5,Baja,1,2
+Heroes,Calle 45,17,Sabado,20,0,1,7,Baja,0,1
+Calle 45,Calle 72,20,Domingo,79,0,0,7,Baja,0,2
+Av. Boyaca,Tercer Milenio,14,Martes,43,1,0,6,Baja,1,2
+Tercer Milenio,Bosa,8,Jueves,62,0,1,6,Media,1,1
+Ricaurte,Portal Norte,14,Miercoles,115,1,0,9,Media,1,0
+Calle 45,Av. Boyaca,10,Martes,64,0,0,7,Baja,1,2
+Suba,Tercer Milenio,12,Jueves,56,0,0,5,Baja,1,2
+Calle 26,Heroes,5,Domingo,69,0,0,7,Baja,0,2
+Toberin,Av. Jimenez,16,Viernes,96,1,0,10,Media,1,0
+Portal Sur,Heroes,11,Jueves,143,0,0,8,Alta,1,0
+Calle 72,Av. Boyaca,14,Sabado,47,0,0,6,Baja,0,2
+Portal Norte,Av. Boyaca,6,Viernes,147,0,1,10,Alta,1,1
+Calle 72,Calle 100,11,Viernes,84,0,0,7,Baja,1,2
+Av. Boyaca,Tercer Milenio,6,Miercoles,132,0,1,11,Alta,1,1
+Calle 142,Toberin,14,Miercoles,126,0,0,7,Media,1,0
+Av. Jimenez,Calle 72,21,Viernes,89,0,0,7,Media,1,0
+Calle 26,Portal Sur,14,Sabado,53,0,0,5,Baja,0,2
+Calle 142,Portal Sur,12,Domingo,60,0,0,4,Baja,0,2
+Portal Norte,Calle 72,22,Lunes,136,0,0,9,Alta,1,0
+Heroes,Av. Boyaca,17,Domingo,57,0,1,8,Media,0,1
+Portal Norte,Av. Boyaca,22,Miercoles,76,0,0,7,Media,1,0
+Bosa,Tercer Milenio,14,Sabado,62,0,0,4,Baja,0,2
+Portal Norte,Calle 72,20,Lunes,44,0,0,6,Baja,1,2
