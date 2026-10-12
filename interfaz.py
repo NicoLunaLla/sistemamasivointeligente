@@ -45,6 +45,15 @@ try:
 except Exception:
     CONGESTION_DISPONIBLE = False
 
+# --- Integracion con el agrupamiento no supervisado (parte 3) ---
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "aprendizaje_no_supervisado"))
+try:
+    from modelo_agrupamiento import entrenar_agrupador, clasificar_trayecto
+    AGRUPAMIENTO_DISPONIBLE = True
+except Exception:
+    AGRUPAMIENTO_DISPONIBLE = False
+
 
 # ---- Colores ----
 COLOR_FONDO = "#eef2f6"
@@ -165,10 +174,27 @@ class MapaRutas:
                 command=self._marcar_seleccion,
             ).grid(row=0, column=2, padx=6)
 
+            # Campo para escribir la cantidad de pasajeros.
+            tk.Label(
+                fila_checks, text="Pasajeros:", bg=COLOR_FONDO,
+                font=("Segoe UI", 10),
+            ).grid(row=0, column=3, padx=(16, 4))
+            self.entrada_pasajeros = tk.Entry(
+                fila_checks, width=6, font=("Segoe UI", 10))
+            self.entrada_pasajeros.insert(0, "80")  # valor por defecto
+            self.entrada_pasajeros.grid(row=0, column=4, padx=4)
+
             # Entrenamos el modelo UNA vez al abrir la ventana.
             self._modelo_congestion = preparar_modelo()
         else:
+            self.entrada_pasajeros = None
             self._modelo_congestion = None
+
+        # Entrenamos el agrupador (K-Means) una vez, si esta disponible.
+        if AGRUPAMIENTO_DISPONIBLE:
+            self._agrupador = entrenar_agrupador()
+        else:
+            self._agrupador = None
 
         # Etiqueta de resultado (texto).
         self.etiqueta_resultado = tk.Label(
@@ -187,7 +213,16 @@ class MapaRutas:
             bg=COLOR_FONDO, fg=COLOR_TEXTO,
             justify="left",
         )
-        self.etiqueta_congestion.pack(pady=(0, 4))
+        self.etiqueta_congestion.pack(pady=(0, 2))
+
+        # Tercera etiqueta: tipo de trayecto segun el agrupamiento (parte 3).
+        self.etiqueta_grupo = tk.Label(
+            self.ventana,
+            text="",
+            font=("Segoe UI", 10, "bold"),
+            bg=COLOR_FONDO, fg=COLOR_TITULO,
+        )
+        self.etiqueta_grupo.pack(pady=(0, 4))
 
     # ----------------------------------------------------------------
     # Lienzo donde se dibuja el mapa.
@@ -369,6 +404,9 @@ class MapaRutas:
         # ---- Ruta ajustada por congestion (parte 2) ----
         self._mostrar_congestion()
 
+        # ---- Tipo de trayecto segun el agrupamiento (parte 3) ----
+        self._mostrar_grupo()
+
         self.boton.config(state="normal")
 
     def _mostrar_congestion(self):
@@ -434,6 +472,45 @@ class MapaRutas:
                 text=(f"Con {texto_cond}, la ruta se mantiene pero el "
                       f"costo sube a {costo_ajustado} por la congestion."),
                 fg=COLOR_DESTINO)
+
+    def _mostrar_grupo(self):
+        """
+        Usa el agrupamiento (K-Means) para decir a que TIPO de trayecto
+        se parece el viaje actual, segun sus condiciones. Muestra un
+        nombre entendible: "Trayecto tranquilo", "moderado" o "muy cargado".
+        """
+        if not AGRUPAMIENTO_DISPONIBLE or self._agrupador is None:
+            return
+
+        # Leemos la cantidad de pasajeros escrita por el usuario.
+        try:
+            pasajeros = int(self.entrada_pasajeros.get())
+        except (ValueError, AttributeError):
+            self.etiqueta_grupo.config(
+                text="(Escribe un numero valido de pasajeros)",
+                fg=COLOR_DESTINO)
+            return
+
+        hora_pico = self.var_hora_pico.get()
+        lluvia = self.var_lluvia.get()
+
+        # Estimamos hora y tiempo del viaje en el MISMO rango del dataset
+        # (los tiempos del dataset van de ~2 a ~12 min). El tiempo depende
+        # sobre todo de los pasajeros, mas un extra por hora pico y lluvia.
+        hora = 7 if hora_pico else 11
+        tiempo = 3 + pasajeros / 25
+        tiempo += 2 if hora_pico else 0
+        tiempo += 2 if lluvia else 0
+        tiempo = round(tiempo)
+
+        grupo = clasificar_trayecto(
+            self._agrupador, hora=hora, pasajeros=pasajeros, lluvia=lluvia,
+            hora_pico=hora_pico, tiempo_estimado=tiempo, dia_laboral=1)
+
+        self.etiqueta_grupo.config(
+            text=f"Tipo de trayecto (agrupamiento): {grupo}  "
+                 f"[{pasajeros} pasajeros]",
+            fg=COLOR_TITULO)
 
 
 if __name__ == "__main__":
